@@ -2,10 +2,8 @@
 Camera calibration c++ code based on OpenCV with generic, fisheye, and omnidirectional model
 
 # Dependencies
-<pre><code>
-	# apt install libopencv-dev libopencv-calib3d-dev libopencv-contrib-dev 
-	# apt install libboost-filesystem-dev
-</code></pre>
+<pre><code>  # apt install libopencv-dev libopencv-calib3d-dev libopencv-contrib-dev
+  # apt install libboost-filesystem-dev</code></pre>
 
 # Option
 <pre><code>  -m (string): calibration model with "generic", "fisheye", and "omnidir"
@@ -23,7 +21,5 @@ Camera calibration c++ code based on OpenCV with generic, fisheye, and omnidirec
   (filename): at the end of commandline, xml file with a list of the images, created with imagelist_creator tool</code></pre>
 
 # Usage
-<pre><code>
-	$./imagelist_creator ./imagelist.xml ./test/*.png
-	$./a.out -m=generic -w=7 -h=10 -a=1.0 -sw=80.0 -sh=80.0 -o=camera.xml -su -oe ./imagelist.xml
-</code></pre>
+<pre><code>  $./imagelist_creator ./imagelist.xml ./test/*.png
+    $./a.out -m=generic -w=7 -h=10 -a=1.0 -sw=80.0 -sh=80.0 -o=camera.xml -su -oe ./imagelist.xml</code></pre>
