@@ -34,25 +34,25 @@ For Python source code,
 # Usage
 For generic model calibration, and then validation,
 <pre><code>  $./build/imagelist_creator ./image_list.xml ./images/*.jpg
-    $./build/extensive_calibrate -m=generic -bw=9 -bh=6 -sw=50.0 -sh=50.0 -o=generic_model.xml -i=image_list.xml -os=0.0 -ow=0 -oh=0 -ox=0.0 -oy=0.0 -calibrate=true -validate=true </code></pre>
+  $./build/extensive_calibrate -m=generic -bw=9 -bh=6 -sw=50.0 -sh=50.0 -o=generic_model.xml -i=image_list.xml -os=0.0 -ow=0 -oh=0 -ox=0.0 -oy=0.0 -calibrate=true -validate=true </code></pre>
 
 For fisheye model calibration, and then validation,
 <pre><code>  $./build/imagelist_creator ./fisheye_image_list.xml ./omnidir_images/*.jpg
-    $./build/extensive_calibrate -m=fisheye -bw=9 -bh=6 -sw=50.0 -sh=50.0 -o=fisheye_model.xml -i=fisheye_image_list.xml -os=0.0 -ow=0 -oh=0 -ox=0.0 -oy=0.0 -calibrate=true -validate=true </code></pre>
+  $./build/extensive_calibrate -m=fisheye -bw=9 -bh=6 -sw=50.0 -sh=50.0 -o=fisheye_model.xml -i=fisheye_image_list.xml -os=0.0 -ow=0 -oh=0 -ox=0.0 -oy=0.0 -calibrate=true -validate=true </code></pre>
 
 For omnidir model calibration, and then validation,
 <pre><code>  $./build/imagelist_creator ./omnidir_image_list.xml ./omnidir_images/*.jpg
-    $./build/extensive_calibrate -m=omnidir -bw=9 -bh=6 -sw=50.0 -sh=50.0 -o=omnidir_model.xml -i=omnidir_image_list.xml -os=0.0 -ow=0 -oh=0 -ox=0.0 -oy=0.0 -calibrate=true -validate=true </code></pre>
+  $./build/extensive_calibrate -m=omnidir -bw=9 -bh=6 -sw=50.0 -sh=50.0 -o=omnidir_model.xml -i=omnidir_image_list.xml -os=0.0 -ow=0 -oh=0 -ox=0.0 -oy=0.0 -calibrate=true -validate=true </code></pre>
 
 ## In the case of Python version
 For generic model calibration, and then validation,
 <pre><code>  $./build/imagelist_creator ./image_list.xml ./images/*.jpg
-    $python3 ./python_code/extensive_calibrate.py -m= generic -bw= 9 -bh= 6 -sw= 50.0 -sh= 50.0 -o= generic_model.xml -i= image_list.xml -os= 0.0 -ow= 0 -oh= 0 -ox= 0.0 -oy= 0.0 -calibrate= true -validate= true </code></pre>
+  $python3 ./python_code/extensive_calibrate.py -m= generic -bw= 9 -bh= 6 -sw= 50.0 -sh= 50.0 -o= generic_model.xml -i= image_list.xml -os= 0.0 -ow= 0 -oh= 0 -ox= 0.0 -oy= 0.0 -calibrate= true -validate= true </code></pre>
 
 For fisheye model calibration, and then validation,
 <pre><code>  $./build/imagelist_creator ./fisheye_image_list.xml ./omnidir_images/*.jpg
-    $python3 ./python_code/extensive_calibrate.py -m= fisheye -bw= 9 -bh= 6 -sw= 50.0 -sh= 50.0 -o= fisheye_model.xml -i= fisheye_image_list.xml -os= 0.0 -ow= 0 -oh= 0 -ox= 0.0 -oy= 0.0 -calibrate= true -validate= true </code></pre>
+  $python3 ./python_code/extensive_calibrate.py -m= fisheye -bw= 9 -bh= 6 -sw= 50.0 -sh= 50.0 -o= fisheye_model.xml -i= fisheye_image_list.xml -os= 0.0 -ow= 0 -oh= 0 -ox= 0.0 -oy= 0.0 -calibrate= true -validate= true </code></pre>
 
 For omnidir model calibration, and then validation,
 <pre><code>  $./build/imagelist_creator ./omnidir_image_list.xml ./omnidir_images/*.jpg
-    $python3 ./python_code/extensive_calibrate.py -m= omnidir -bw= 9 -bh= 6 -sw= 50.0 -sh= 50.0 -o= omnidir_model.xml -i= omnidir_image_list.xml -os= 0.0 -ow= 0 -oh= 0 -ox= 0.0 -oy= 0.0 -calibrate= true -validate= true </code></pre>
+  $python3 ./python_code/extensive_calibrate.py -m= omnidir -bw= 9 -bh= 6 -sw= 50.0 -sh= 50.0 -o= omnidir_model.xml -i= omnidir_image_list.xml -os= 0.0 -ow= 0 -oh= 0 -ox= 0.0 -oy= 0.0 -calibrate= true -validate= true </code></pre>
