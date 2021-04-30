@@ -5,6 +5,7 @@ import numpy as np
 import time
 import math
 
+from utility import *
 from base_model import *
 
 # cv2.setUseOpenVX(True)
@@ -14,7 +15,7 @@ DEBUG = True
 
 class OmnidirModel(BaseModel):
     def __init__(self):
-        # self.super().__init__()
+        super().__init__()
 
         self.calibrateFlags = cv2.omnidir.CALIB_USE_GUESS + cv2.omnidir.CALIB_FIX_SKEW + cv2.omnidir.CALIB_FIX_CENTER
         self.boardSize = (6, 9)

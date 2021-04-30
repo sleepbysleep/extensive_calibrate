@@ -14,7 +14,7 @@ DEBUG = True
 
 class GenericModel(BaseModel):
     def __init__(self):
-        # self.super().__init__()
+        super().__init__()
 
         self.calibrateFlags = cv2.CALIB_RATIONAL_MODEL #+ cv::CALIB_FIX_K3 + cv::CALIB_FIX_K4 + cv::CALIB_FIX_K5
         self.boardSize = (6,9)

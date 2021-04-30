@@ -14,7 +14,7 @@ DEBUG = True
 
 class FisheyeModel(BaseModel):
     def __init__(self):
-        # self.super().__init__()
+        super().__init__()
 
         self.calibrateFlags = cv2.fisheye.CALIB_RECOMPUTE_EXTRINSIC + cv2.fisheye.CALIB_FIX_SKEW
         self.boardSize = (6,9)
@@ -153,7 +153,7 @@ if __name__ == '__main__':
     undistortOffset = (0,0)  # in the order of (h,w)
 
     model = FisheyeModel()
-    # model.calibrateFromXML(calibrateImagesXML, boardSize, squareSize, calibrateFlags, calibrateModelXML, True)
+    model.calibrateFromXML(calibrateImagesXML, boardSize, squareSize, calibrateFlags, calibrateModelXML, True)
 
     image_list = model.readFileListFromXML(calibrateImagesXML)
     model.validateFromFiles(image_list, 0, undistortSize, undistortScale, undistortOffset, calibrateModelXML, True)
