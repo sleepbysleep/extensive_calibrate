@@ -87,9 +87,9 @@ if __name__ == "__main__":
     boardSize = (args.board_height, args.board_width)  # in the order of (h,w)
     squareSize = (args.square_height, args.square_width)  # in the order of (h,w)
 
-    undistortSize = None if args.undist_height == 0 or args.undist_width == 0 else (args.undist_height, args.undist_width) # in the order of (h,w)
-    undistortOffset = None if args.undist_yoff == 0 or args.undist_xoff == 0 else (args.undist_yoff, args.undist_xoff)  # in the order of (h,w)
-    undistortScale = None if args.undist_scale == 0.0 else args.undist_scale
+    undistortSize = None if args.undist_height is None or args.undist_width is None else (args.undist_height, args.undist_width) # in the order of (h,w)
+    undistortOffset = None if args.undist_yoff is None or args.undist_xoff is None else (args.undist_yoff, args.undist_xoff)  # in the order of (h,w)
+    undistortScale = None if args.undist_scale is None else args.undist_scale
 
     print("calibrateImagesXML: ", calibrateImagesXML)
     print("calibrateModelXML: ", calibrateModelXML)
